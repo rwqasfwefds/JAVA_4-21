@@ -1,0 +1,19 @@
+package Ex16_6;
+
+import java.io.IOException;
+import java.net.ServerSocket;
+
+public class Ex16_6 {
+
+	public static void main(String[] args) {
+		ServerSocket serverSocket = null;
+		
+		try {
+			serverSocket = new ServerSocket(777);
+			System.out.println(getTime() + "서버가 준비되었습니다.");
+		} catch(IOException e) {
+			e.printStackTrace();
+		}
+	}
+
+}

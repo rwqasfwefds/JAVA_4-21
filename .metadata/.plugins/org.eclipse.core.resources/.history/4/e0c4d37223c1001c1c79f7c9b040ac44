@@ -1,0 +1,13 @@
+package Ex16_2;
+
+import java.net.URL;
+
+public class Ex16_2 {
+
+	public static void main(String[] args) {
+		URL url = new URL("http://www.javachobo.com:80/sample/" + "hello.html?referer=javachobo#index1");
+		
+		System.out.println("url.getAuthority() : " + url.getAuthority());
+	}
+
+}
